@@ -1,0 +1,21 @@
+{
+  "name": "tp-05-salas-middleware",
+  "version": "1.0.0",
+  "main": "index.js",
+  "type": "commonjs",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node src/index.js",
+    "check": "node --check src/index.js"
+  },
+  "keywords": [],
+  "author": "Renato G. Trentini",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "ejs": "^6.0.1",
+    "express": "^5.2.1",
+    "express-ejs-layouts": "^2.5.1",
+    "morgan": "^1.12.1"
+  }
+}

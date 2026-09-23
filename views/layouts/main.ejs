@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title><%= titulo %> · Salas de estudio</title>
+    <link rel="stylesheet" href="/css/estilos.css" />
+</head>
+<body>
+    <header class="cabecera">
+        <a href="/">
+            <img
+                src="/img/hospital.svg"
+                alt="Hospital"
+                class="logo"
+            >
+        </a>
+        <nav aria-label="Navegación principal">
+            <a href="/">Inicio</a>
+            <a href="/reservas">Reservas</a>
+            <a href="/reservas/nueva">Nueva reserva</a>
+        </nav>
+    </header>
+
+    <main class="contenido">
+        <h1><%= titulo %></h1>
+        <%- body %>
+    </main>
+
+    <footer class="pie">
+        <p>Trabajo práctico 05 · Alumno: Renato G. Trentini</p>
+        <% if (typeof solicitudId !== "undefined") { %>
+            <p class="solicitud-id">ID de solicitud: <%= solicitudId %></p>
+        <% } %>
+    </footer>
+</body>
+</html>

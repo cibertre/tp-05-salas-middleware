@@ -1,0 +1,19 @@
+<p class="acciones">
+    <a class="boton" href="/reservas/nueva">+ Nueva reserva</a>
+</p>
+
+<% if (reservas.length === 0) { %>
+    <p class="estado-vacio">Todavía no hay reservas cargadas.</p>
+<% } else { %>
+    <ul class="tarjetas">
+        <% reservas.forEach((reserva) => { %>
+            <li class="tarjeta">
+                <h2><%= reserva.sala %></h2>
+                <p><strong>Estudiante:</strong> <%= reserva.estudiante %></p>
+                <p><strong>Fecha:</strong> <%= reserva.fecha %> · <strong>Turno:</strong> <%= reserva.turno %></p>
+                <p><strong>Personas:</strong> <%= reserva.personas %></p>
+                <p><a href="/reservas/<%= reserva.id %>">Ver detalle</a></p>
+            </li>
+        <% }); %>
+    </ul>
+<% } %>

@@ -54,6 +54,11 @@ select:focus-visible {
     width: auto;
     display: block;
 }
+.logo-inicio {
+    height: 18px;
+    width: auto;
+    display: inline-flex;
+}
 
 .cabecera nav a {
     color: #fff;

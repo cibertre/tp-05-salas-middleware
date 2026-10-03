@@ -59,7 +59,7 @@ const reservas = [
 let numeroDeSolicitud = 0;
 function identificarSolicitud(req, res, next) {
     numeroDeSolicitud += 1;
-    res.locals.solicitudId = `SOL-${String(numeroDeSolicitud).padStart(4, "0")}`;
+    res.locals.solicitudId = `BIB-${String(numeroDeSolicitud).padStart(4, "0")}`;
     next();
 }
 // Mide cuánto tarda la respuesta. Se apoya en el evento "finish" de la

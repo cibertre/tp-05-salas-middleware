@@ -91,7 +91,7 @@ Justificación del orden:
 
 | Función                  | Alcance  | Dónde se registra        | Qué hace |
 |--------------------------|----------|--------------------------|----------|
-| `identificarSolicitud`   | Global   | `app.use(...)`           | Genera `SOL-0001`, `SOL-0002` 
+| `identificarSolicitud`   | Global   | `app.use(...)`           | Genera `BIB-0001`, `BIB-0002` 
 | `medirDuracion`          | Global   | `app.use(...)`           | Guarda el tiempo de inicio, escucha `finish` en `res` y recién ahí calcula y loguea la duración. |
 | `prepararAreaReservas`   | Router   | `reservasRouter.use(...)`| Define `res.locals.seccion = "Reservas de salas"`, usado por las vistas del área. No corre para `/` ni `/estado`. |
 | `validarReserva`         | Ruta     | `reservasRouter.post("/", validarReserva, crearReserva)` | Sólo corre para `POST /reservas`. Normaliza y valida `req.body`. |
